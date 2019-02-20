@@ -1,0 +1,76 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.BG-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.BG {
+  height: 100%;
+  left: -25%;
+  width: auto;
+  position: absolute;
+  text-align: center;
+}
+#BG-color {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4da521+0,cfeda8+100&0.95+1,0.8+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(77, 165, 33, 0.95) 0%,
+    rgba(78, 166, 34, 0.95) 1%,
+    rgba(207, 237, 168, 0.8) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(77, 165, 33, 0.95) 0%,
+    rgba(78, 166, 34, 0.95) 1%,
+    rgba(207, 237, 168, 0.8) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(77, 165, 33, 0.95) 0%,
+    rgba(78, 166, 34, 0.95) 1%,
+    rgba(207, 237, 168, 0.8) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24da521', endColorstr='#cccfeda8',GradientType=0 ); /* IE6-9 */
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+}
+
+#appContainer {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+}
+
+#initial-grid {
+  box-sizing: border-box;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 64px 64px auto auto auto;
+  padding: 30px;
+}
+
+.initial-logo {
+  background-image: url("../assets/Logo.png");
+  background-size: cover;
+}
+.fullW {
+  width: 100%;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
