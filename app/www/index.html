@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <title>Inicio</title>
   </head>
   <body>
@@ -19,31 +20,27 @@
     </div>
 
     <!--End Background-->
-
     <!-- App-->
-
-    <div id="appContainer">
-      <div id="initial-grid">
-        <div></div>
-        <div class="initial-logo"></div>
-        <div></div>
-        <div class="initial-button-container center-align">
-          <a
-            class="waves-effect waves-green btn white light-green-text fullW mb"
-            >Iniciar sesión</a
-          >
-          <br />
-          <a
-            class="waves-effect waves-green btn white light-green-text fullW mb"
-            >Registrarse</a
-          >
-        </div>
-        <div></div>
-      </div>
-    </div>
+    <div id="app-container"></div>
     <!--End App-->
   </body>
   <!--Import Scripts-->
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBSSQ9AYEZj34Ejih5W1kdqpBRaldzloTs",
+      authDomain: "finca-ee8c7.firebaseapp.com",
+      databaseURL: "https://finca-ee8c7.firebaseio.com",
+      projectId: "finca-ee8c7",
+      storageBucket: "finca-ee8c7.appspot.com",
+      messagingSenderId: "95799701393"
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="js/materialize.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/AuthLogic.js"></script>
   <!--End Import Scripts-->
 </html>

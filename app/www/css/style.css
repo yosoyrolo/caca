@@ -3,6 +3,7 @@ html {
   height: 100%;
   margin: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .BG-container {
@@ -46,7 +47,7 @@ html {
   position: absolute;
 }
 
-#appContainer {
+#app-container {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -55,22 +56,70 @@ html {
   top: 0;
 }
 
-#initial-grid {
+#startPage {
   box-sizing: border-box;
   height: 100%;
   display: grid;
-  grid-template-rows: 64px 64px auto auto auto;
+  grid-template-rows: 64px auto auto auto auto;
+  padding: 30px;
+}
+
+#loginPage {
+  box-sizing: border-box;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 64px auto auto auto auto;
   padding: 30px;
 }
 
 .initial-logo {
   background-image: url("../assets/Logo.png");
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 .fullW {
   width: 100%;
 }
 
+.fullH {
+  height: 100%;
+}
+
 .mb {
   margin-bottom: 30px;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-0-75s {
+  animation-delay: 0.75s;
+}
+
+.delay-0-5s {
+  animation-delay: 0.5s;
+}
+
+.delay-0-25s {
+  animation-delay: 0.25s;
+}
+
+.inp {
+}
+
+.round {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.pRel {
+  position: relative;
 }
